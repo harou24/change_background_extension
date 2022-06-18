@@ -1,0 +1,23 @@
+{
+    "manifest_version": 4,
+    "name": "change_background",
+    "description": "Change the background of any website.",
+    "version": "1.0",
+    "icons": {
+        "16": "/images/16x16_colors.png",
+        "48": "/images/48x48_colors.png",
+        "128": "/images/128x128_colors.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "/images/16x16_colors.png",
+            "48": "/images/48x48_colors.png",
+            "128": "/images/128x128_colors.png"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "css": ["main.styles.css"]
+    }
+    ]
+}
